@@ -1,0 +1,8 @@
+myserver:
+    build: .
+    ports:
+    - "8080:80"
+    environment:
+    - MODE=dev
+    volumes:
+    - /Users/zimyand/Projects/python/flask-docker-seed/:/usr/src/app:ro
